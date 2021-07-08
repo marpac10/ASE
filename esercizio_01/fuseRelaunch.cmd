@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/ASE/esempiVHDL/esercizio_01/mux_8_1_tb_isim_beh.exe" -prj "C:/Users/Windows/Desktop/ASE/esempiVHDL/esercizio_01/mux_8_1_tb_beh.prj" "work.mux_8_1_tb" 
