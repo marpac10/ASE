@@ -1,0 +1,29 @@
+Command line:
+   moltiplicatore_somma_diagonali_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57231
+
+Fri Nov 29 19:57:40 2019
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5155.39 Meg
+
+ Total Signals          : 297
+ Total Nets             : 232
+ Total Signal Drivers   : 194
+ Total Blocks           : 59
+ Total Primitive Blocks : 57
+ Total Processes        : 193
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 592
+Total Line Count : 196
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 4998.11 Meg
+
+Fri Nov 29 19:59:05 2019
+

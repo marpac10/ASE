@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Fri Nov 29 21:00:37 2019
+# Process ID: 13744
+# Log file: C:/Users/Windows/Desktop/Progetto/esercizio_09/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Windows/Desktop/Progetto/esercizio_09/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Windows/Desktop/Progetto/esercizio_09/pa.fromNetlist.tcl
