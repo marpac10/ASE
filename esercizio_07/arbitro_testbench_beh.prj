@@ -1,0 +1,2 @@
+vhdl work "../../progetti_completi/esercizio_arbitro/arbitro.vhd"
+vhdl work "../../progetti_completi/esercizio_arbitro/arbitro_testbench.vhd"

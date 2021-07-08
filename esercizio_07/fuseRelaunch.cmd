@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/ASE/esempiVHDL/Esercizio_07/arbitro_testbench_isim_beh.exe" -prj "C:/Users/Windows/Desktop/ASE/esempiVHDL/Esercizio_07/arbitro_testbench_beh.prj" "work.arbitro_testbench" 
