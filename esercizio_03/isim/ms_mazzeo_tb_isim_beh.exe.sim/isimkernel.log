@@ -1,0 +1,29 @@
+Command line:
+   ms_mazzeo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54268
+
+Sat Nov 23 19:08:37 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5155.91 Meg
+
+ Total Signals          : 11
+ Total Nets             : 6
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 367
+Total Line Count : 29
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 4684.05 Meg
+
+Sat Nov 23 19:10:52 2019
+
