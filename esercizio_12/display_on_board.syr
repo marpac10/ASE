@@ -1,0 +1,712 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: display_on_board.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "display_on_board.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "display_on_board"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : display_on_board
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\common_defs.vhd" into library work
+Parsing package <common_defs>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\control_store.vhd" into library work
+Parsing entity <control_store>.
+Parsing architecture <dataflow> of entity <control_store>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\alu.vhd" into library work
+Parsing entity <alu>.
+Parsing architecture <behavioral> of entity <alu>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\datapath.vhd" into library work
+Parsing entity <datapath>.
+Parsing architecture <behavioral> of entity <datapath>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\control_unit.vhd" into library work
+Parsing entity <control_unit>.
+Parsing architecture <behavioral> of entity <control_unit>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\processor.vhd" into library work
+Parsing entity <processor>.
+Parsing architecture <structural> of entity <processor>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\dp_ar_ram.vhd" into library work
+Parsing entity <dp_ar_ram>.
+Parsing architecture <behavioral> of entity <dp_ar_ram>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\counter_mod4.vhd" into library work
+Parsing entity <counter_mod4>.
+Parsing architecture <Behavioral> of entity <counter_mod4>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\clock_filter.vhd" into library work
+Parsing entity <clock_filter>.
+Parsing architecture <Behavioral> of entity <clock_filter>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\cathodes_manager.vhd" into library work
+Parsing entity <cathodes_manager>.
+Parsing architecture <Behavioral> of entity <cathodes_manager>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\anodes_manager.vhd" into library work
+Parsing entity <anodes_manager>.
+Parsing architecture <Behavioral> of entity <anodes_manager>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\system.vhd" into library work
+Parsing entity <system>.
+Parsing architecture <structural> of entity <system>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\display_seven_segments.vhd" into library work
+Parsing entity <display_seven_segments>.
+Parsing architecture <Structural> of entity <display_seven_segments>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_12\display_on_board.vhd" into library work
+Parsing entity <display_on_board>.
+Parsing architecture <Structural> of entity <display_on_board>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <display_on_board> (architecture <Structural>) from library <work>.
+
+Elaborating entity <display_seven_segments> (architecture <Structural>) with generics from library <work>.
+
+Elaborating entity <clock_filter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <counter_mod4> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_12\counter_mod4.vhd" Line 28: enable should be on the sensitivity list of the process
+
+Elaborating entity <cathodes_manager> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Windows\Desktop\Progetto\esercizio_12\cathodes_manager.vhd" Line 66. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Windows\Desktop\Progetto\esercizio_12\cathodes_manager.vhd" Line 90. Case statement is complete. others clause is never selected
+
+Elaborating entity <anodes_manager> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Windows\Desktop\Progetto\esercizio_12\anodes_manager.vhd" Line 40. Case statement is complete. others clause is never selected
+
+Elaborating entity <system> (architecture <structural>) from library <work>.
+
+Elaborating entity <processor> (architecture <structural>) from library <work>.
+
+Elaborating entity <control_unit> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <control_store> (architecture <dataflow>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Windows\Desktop\Progetto\esercizio_12\control_unit.vhd" Line 85: Assignment to n_ff ignored, since the identifier is never used
+
+Elaborating entity <datapath> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <alu> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <dp_ar_ram> (architecture <behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <display_on_board>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\display_on_board.vhd".
+    Summary:
+	no macro.
+Unit <display_on_board> synthesized.
+
+Synthesizing Unit <display_seven_segments>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\display_seven_segments.vhd".
+        clock_frequency_in = 100000000
+        clock_frequency_out = 50000
+    Summary:
+	no macro.
+Unit <display_seven_segments> synthesized.
+
+Synthesizing Unit <clock_filter>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\clock_filter.vhd".
+        clock_frequency_in = 100000000
+        clock_frequency_out = 50000
+    Found 11-bit register for signal <count_for_division.counter>.
+    Found 1-bit register for signal <clockfx>.
+    Found 11-bit adder for signal <count_for_division.counter[10]_GND_6_o_add_1_OUT> created at line 38.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clock_filter> synthesized.
+
+Synthesizing Unit <counter_mod4>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\counter_mod4.vhd".
+    Found 3-bit register for signal <c>.
+    Found 3-bit adder for signal <c[2]_GND_8_o_add_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <counter_mod4> synthesized.
+
+Synthesizing Unit <cathodes_manager>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\cathodes_manager.vhd".
+    Found 1-bit 8-to-1 multiplexer for signal <nibble<3>> created at line 73.
+    Found 1-bit 8-to-1 multiplexer for signal <nibble<2>> created at line 73.
+    Found 1-bit 8-to-1 multiplexer for signal <nibble<1>> created at line 73.
+    Found 1-bit 8-to-1 multiplexer for signal <nibble<0>> created at line 73.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <cathodes_manager> synthesized.
+
+Synthesizing Unit <anodes_manager>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\anodes_manager.vhd".
+    Summary:
+	no macro.
+Unit <anodes_manager> synthesized.
+
+Synthesizing Unit <system>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\system.vhd".
+    Summary:
+	no macro.
+Unit <system> synthesized.
+
+Synthesizing Unit <processor>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\processor.vhd".
+    Summary:
+	no macro.
+Unit <processor> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\control_unit.vhd".
+    Found 36-bit register for signal <mir_reg>.
+    Found 4-bit comparator greater for signal <mir_reg[3]_PWR_21_o_LessThan_6_o> created at line 114
+    Summary:
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <control_store>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\control_store.vhd".
+    Found 512x36-bit Read Only RAM for signal <word>
+    Summary:
+	inferred   1 RAM(s).
+Unit <control_store> synthesized.
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\datapath.vhd".
+    Found 32-bit register for signal <lv_reg>.
+    Found 32-bit register for signal <cpp_reg>.
+    Found 32-bit register for signal <tos_reg>.
+    Found 32-bit register for signal <opc_reg>.
+    Found 32-bit register for signal <h_reg>.
+    Found 32-bit register for signal <mar_reg>.
+    Found 32-bit register for signal <mdr_reg>.
+    Found 32-bit register for signal <pc_reg>.
+    Found 8-bit register for signal <mbr_reg>.
+    Found 1-bit register for signal <rd_ff>.
+    Found 1-bit register for signal <fetch_ff>.
+    Found 1-bit register for signal <wr_ff>.
+    Found 32-bit register for signal <sp_reg>.
+    Summary:
+	inferred 299 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <datapath> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\alu.vhd".
+    Found 32-bit adder for signal <n0046> created at line 106.
+    Found 32-bit adder for signal <t_u_sum> created at line 106.
+    Found 32-bit 4-to-1 multiplexer for signal <t_result> created at line 114.
+    Found 32-bit 4-to-1 multiplexer for signal <sh_result> created at line 125.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   9 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <dp_ar_ram>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_12\dp_ar_ram.vhd".
+WARNING:Xst:647 - Input <address_1<31:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 512x32-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit 4-to-1 multiplexer for signal <data_out_2> created at line 107.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <dp_ar_ram> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 512x32-bit dual-port RAM                              : 1
+ 512x36-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 4
+ 11-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 2
+# Registers                                            : 17
+ 1-bit register                                        : 4
+ 11-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 9
+ 36-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 18
+ 1-bit 8-to-1 multiplexer                              : 4
+ 11-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 4-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <mar_reg_9> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_10> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_11> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_12> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_13> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_14> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_15> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_16> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_17> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_18> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_19> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_20> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_21> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_22> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_23> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_24> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_25> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_26> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_27> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_28> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_29> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_30> of sequential type is unconnected in block <datapath>.
+WARNING:Xst:2677 - Node <mar_reg_31> of sequential type is unconnected in block <datapath>.
+
+Synthesizing (advanced) Unit <clock_filter>.
+The following registers are absorbed into counter <count_for_division.counter>: 1 register on signal <count_for_division.counter>.
+Unit <clock_filter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <control_unit>.
+INFO:Xst:3226 - The RAM <control_store/Mram_word> will be implemented as a BLOCK RAM, absorbing the following register(s): <mir_reg>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 36-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(mpc_virtual_reg,jmpc_addr)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <mir_reg>       |          |
+    |     dorstA         | connected to signal <reset>         | high     |
+    | reset value        | 001100101000000000000000000000001001           |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <control_unit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_mod4>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+Unit <counter_mod4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <system>.
+INFO:Xst:3226 - The RAM <dp_ar_ram/Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <processor/datapath/mar_reg> <processor/datapath/pc_reg>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <mem_data_we>   | high     |
+    |     addrA          | connected to signal <processor/datapath/c_bus<8:0>> |          |
+    |     diA            | connected to signal <mem_data_out>  |          |
+    |     doA            | connected to signal <mem_data_in>   |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <processor/c_to_reg_control_t<2>_0> | high     |
+    |     weB            | connected to signal <GND>           | high     |
+    |     addrB          | connected to signal <processor/datapath/c_bus<10:2>> |          |
+    |     diB            | connected to signal <GND>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <system> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 512x32-bit dual-port block RAM                        : 1
+ 512x36-bit single-port block Read Only RAM            : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder carry in                                 : 1
+# Counters                                             : 2
+ 11-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 268
+ Flip-Flops                                            : 268
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 17
+ 1-bit 8-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 4-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <display_on_board> ...
+
+Optimizing unit <cathodes_manager> ...
+
+Optimizing unit <system> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <control_unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block display_on_board, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 282
+ Flip-Flops                                            : 282
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : display_on_board.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 757
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 61
+#      LUT4                        : 60
+#      LUT5                        : 237
+#      LUT6                        : 305
+#      MUXCY                       : 41
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 43
+# FlipFlops/Latches                : 282
+#      FDC                         : 12
+#      FDCE                        : 3
+#      FDR                         : 3
+#      FDRE                        : 260
+#      FDSE                        : 4
+# RAMS                             : 2
+#      RAMB36E1                    : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 1
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             282  out of  126800     0%  
+ Number of Slice LUTs:                  667  out of  63400     1%  
+    Number used as Logic:               667  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    861
+   Number with an unused Flip Flop:     579  out of    861    67%  
+   Number with an unused LUT:           194  out of    861    22%  
+   Number of fully used LUT-FF pairs:    88  out of    861    10%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    210     8%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    135     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 284   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.174ns (Maximum Frequency: 239.601MHz)
+   Minimum input arrival time before clock: 0.776ns
+   Maximum output required time after clock: 2.469ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.174ns (frequency: 239.601MHz)
+  Total number of paths / destination ports: 124676 / 354
+-------------------------------------------------------------------------
+Delay:               4.174ns (Levels of Logic = 28)
+  Source:            s/processor/datapath/lv_reg_0 (FF)
+  Destination:       s/processor/datapath/mdr_reg_30 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: s/processor/datapath/lv_reg_0 to s/processor/datapath/mdr_reg_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.361   0.511  s/processor/datapath/lv_reg_0 (s/processor/datapath/lv_reg_0)
+     LUT6:I3->O            1   0.097   0.295  s/processor/datapath/alu/Mmux_t_operand_b112_SW0 (N6)
+     LUT6:I5->O            2   0.097   0.299  s/processor/datapath/alu/Mmux_t_operand_b112 (s/processor/datapath/alu/Mmux_t_operand_b12)
+     LUT6:I5->O            1   0.097   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_lut<0> (s/processor/datapath/alu/Madd_t_u_sum_Madd_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<0> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<1> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<2> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<3> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<4> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<5> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<6> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<7> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<8> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<9> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<10> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<11> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<12> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<13> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<14> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<15> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<16> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<17> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<18> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<19> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<20> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<21> (s/processor/datapath/alu/Madd_t_u_sum_Madd_cy<21>)
+     XORCY:CI->O           5   0.370   0.314  s/processor/datapath/alu/Madd_t_u_sum_Madd_xor<22> (s/processor/datapath/alu/t_u_sum<22>)
+     LUT6:I5->O            1   0.097   0.693  s/processor/datapath/alu/Mmux_sh_result241_SW0 (N22)
+     LUT6:I0->O            1   0.097   0.000  s/processor/datapath/Mmux_mdr_reg[31]_c_bus[31]_mux_9_OUT241 (s/processor/datapath/mdr_reg[31]_c_bus[31]_mux_9_OUT<30>)
+     FDRE:D                    0.008          s/processor/datapath/mdr_reg_30
+    ----------------------------------------
+    Total                      4.174ns (2.060ns logic, 2.114ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 282 / 282
+-------------------------------------------------------------------------
+Offset:              0.776ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       seven_segment_array/clk_filter/clockfx (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to seven_segment_array/clk_filter/clockfx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           295   0.001   0.426  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.349          seven_segment_array/clk_filter/clockfx
+    ----------------------------------------
+    Total                      0.776ns (0.350ns logic, 0.426ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 388 / 15
+-------------------------------------------------------------------------
+Offset:              2.469ns (Levels of Logic = 4)
+  Source:            seven_segment_array/counter_instance/c_1 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: seven_segment_array/counter_instance/c_1 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.361   0.772  seven_segment_array/counter_instance/c_1 (seven_segment_array/counter_instance/c_1)
+     LUT6:I0->O            1   0.097   0.000  seven_segment_array/cathodes_instance/Mmux_nibble<2>_3 (seven_segment_array/cathodes_instance/Mmux_nibble<2>_3)
+     MUXF7:I1->O           7   0.279   0.584  seven_segment_array/cathodes_instance/Mmux_nibble<2>_2_f7 (seven_segment_array/cathodes_instance/nibble<2>)
+     LUT4:I0->O            1   0.097   0.279  seven_segment_array/cathodes_instance/cathodes_for_digit<6>1 (cathodes_1_OBUF)
+     OBUF:I->O                 0.000          cathodes_1_OBUF (cathodes<1>)
+    ----------------------------------------
+    Total                      2.469ns (0.834ns logic, 1.635ns route)
+                                       (33.8% logic, 66.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.174|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.60 secs
+ 
+--> 
+
+Total memory usage is 4624964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,8 @@
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/common_defs.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/control_store.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/alu.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/datapath.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/control_unit.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/processor.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/dp_ar_ram.vhd"
+vhdl work "../../ASE/amic-0-master/src/main/vhdl/system.vhd"
