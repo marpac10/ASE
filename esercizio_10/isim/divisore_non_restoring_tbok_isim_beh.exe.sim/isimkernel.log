@@ -1,0 +1,29 @@
+Command line:
+   divisore_non_restoring_tbok_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49315
+
+Sat Dec 14 22:10:09 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5156.06 Meg
+
+ Total Signals          : 32
+ Total Nets             : 38
+ Total Signal Drivers   : 14
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 10
+ Total Traceable Variables  : 12
+ Total Scalar Nets and Variables : 402
+Total Line Count : 35
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5156.06 Meg
+
+Sat Dec 14 22:10:29 2019
+

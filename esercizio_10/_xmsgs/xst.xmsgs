@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Windows\Desktop\Progetto\esercizio_10\counter_mod4.vhd" Line 56: <arg fmt="%s" index="1">enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Windows\Desktop\Progetto\esercizio_10\divisore_non_restoring.vhd</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">ready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">div</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Windows\Desktop\Progetto\esercizio_10\divisore_non_restoring.vhd</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">done_tick</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">div</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/count_for_division.counter_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/count_for_division.counter_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dnr/cf/clockfx</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">display_on_board</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seven_segment_array/clk_filter/clockfx&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
