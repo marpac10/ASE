@@ -1,0 +1,2 @@
+vhdl work "../esercizio_03/esercizio_03/ms_sami.vhd"
+vhdl work "../esercizio_03/esercizio_03/ms_sami_tb.vhd"

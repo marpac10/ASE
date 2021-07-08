@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_03_ok/et_mazzeo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_03_ok/et_mazzeo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 et_mazzeo.ngc et_mazzeo.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o et_mazzeo_map.ncd et_mazzeo.ngd et_mazzeo.pcf 
+par -w -intstyle ise -ol high -mt off et_mazzeo_map.ncd et_mazzeo.ncd et_mazzeo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml et_mazzeo.twx et_mazzeo.ncd -o et_mazzeo.twr et_mazzeo.pcf 
+bitgen -intstyle ise -f et_mazzeo.ut et_mazzeo.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_03_ok/et_mazzeo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_03_ok/et_mazzeo.syr" 
