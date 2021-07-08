@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/Progetto/esercizio_10/divisore_tb_isim_beh.exe" -prj "C:/Users/Windows/Desktop/Progetto/esercizio_10/divisore_tb_beh.prj" "work.divisore_tb" 

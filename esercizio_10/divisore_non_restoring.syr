@@ -1,0 +1,541 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: divisore_non_restoring.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "divisore_non_restoring.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "divisore_non_restoring"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : divisore_non_restoring
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\full_adder.vhd" into library work
+Parsing entity <full_adder>.
+Parsing architecture <dataflow> of entity <full_adder>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\shift_register.vhd" into library work
+Parsing entity <shift_register>.
+Parsing architecture <Behavioral> of entity <shift_register>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\et_mazzeo.vhd" into library work
+Parsing entity <et_mazzeo>.
+Parsing architecture <Behavioral> of entity <et_mazzeo>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd" into library work
+Parsing entity <control_unit_2>.
+Parsing architecture <Behavioral> of entity <control_unit_2>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit.vhd" into library work
+Parsing entity <control_unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\clock_filter.vhd" into library work
+Parsing entity <clock_filter>.
+Parsing architecture <Behavioral> of entity <clock_filter>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\adder_subtracter.vhd" into library work
+Parsing entity <adder_subtracter>.
+Parsing architecture <structural> of entity <adder_subtracter>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_10\divisore_non_restoring.vhd" into library work
+Parsing entity <divisore_non_restoring>.
+Parsing architecture <structural> of entity <divisore_non_restoring>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <divisore_non_restoring> (architecture <structural>) from library <work>.
+
+Elaborating entity <adder_subtracter> (architecture <structural>) from library <work>.
+
+Elaborating entity <full_adder> (architecture <dataflow>) from library <work>.
+
+Elaborating entity <clock_filter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <et_mazzeo> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shift_register> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\shift_register.vhd" Line 31: y_temp should be on the sensitivity list of the process
+
+Elaborating entity <control_unit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <control_unit_2> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd" Line 36: start should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd" Line 42: d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd" Line 49: d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd" Line 56: d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd" Line 63: d should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <divisore_non_restoring>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\divisore_non_restoring.vhd".
+INFO:Xst:3210 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\divisore_non_restoring.vhd" line 127: Output port <not_q> of the instance <ff> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <divisore_non_restoring> synthesized.
+
+Synthesizing Unit <adder_subtracter>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\adder_subtracter.vhd".
+INFO:Xst:3210 - "C:\Users\Windows\Desktop\Progetto\esercizio_10\adder_subtracter.vhd" line 68: Output port <c_out> of the instance <fa5> is unconnected or connected to loadless signal.
+    Summary:
+Unit <adder_subtracter> synthesized.
+
+Synthesizing Unit <full_adder>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\full_adder.vhd".
+    Summary:
+Unit <full_adder> synthesized.
+
+Synthesizing Unit <clock_filter>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\clock_filter.vhd".
+        clock_frequency_in = 100000000
+        clock_frequency_out = 5000
+    Found 15-bit register for signal <count_for_division.counter>.
+    Found 1-bit register for signal <clockfx>.
+    Found 15-bit adder for signal <count_for_division.counter[14]_GND_6_o_add_1_OUT> created at line 38.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clock_filter> synthesized.
+
+Synthesizing Unit <et_mazzeo>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\et_mazzeo.vhd".
+    Found 1-bit register for signal <q>.
+    Found 1-bit register for signal <not_q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <et_mazzeo> synthesized.
+
+Synthesizing Unit <shift_register>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\shift_register.vhd".
+WARNING:Xst:647 - Input <reg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <y_temp>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <shift_register> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit.vhd".
+    Found 4-bit register for signal <reg_second>.
+    Found 7-bit register for signal <reg_first>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <control_unit_2>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_10\control_unit_2.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <control.counter<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <control.counter<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <control.counter<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <init>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   6 Latch(s).
+	inferred   9 Multiplexer(s).
+Unit <control_unit_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 15-bit adder                                          : 1
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 15-bit register                                       : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Latches                                              : 6
+ 1-bit latch                                           : 6
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 9
+ 15-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 15
+ 1-bit xor2                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <control.counter_2> has a constant value of 0 in block <cu2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <control.counter_1> has a constant value of 0 in block <cu2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <enable> (without init value) has a constant value of 1 in block <cu2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <control.counter_0> has a constant value of 0 in block <cu2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <init> (without init value) has a constant value of 1 in block <cu2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s> (without init value) has a constant value of 0 in block <cu2>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <clock_filter>.
+The following registers are absorbed into counter <count_for_division.counter>: 1 register on signal <count_for_division.counter>.
+Unit <clock_filter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 17
+# Xors                                                 : 15
+ 1-bit xor2                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <s> (without init value) has a constant value of 0 in block <control_unit_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <control.counter_2> has a constant value of 0 in block <control_unit_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <control.counter_1> has a constant value of 0 in block <control_unit_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <enable> (without init value) has a constant value of 1 in block <control_unit_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <control.counter_0> has a constant value of 0 in block <control_unit_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <init> (without init value) has a constant value of 1 in block <control_unit_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ff/not_q> of sequential type is unconnected in block <divisore_non_restoring>.
+WARNING:Xst:1710 - FF/Latch <y_temp_0> (without init value) has a constant value of 0 in block <shift_register>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ff/q> of sequential type is unconnected in block <divisore_non_restoring>.
+
+Optimizing unit <divisore_non_restoring> ...
+
+Optimizing unit <control_unit> ...
+WARNING:Xst:2677 - Node <cu/reg_second_3> of sequential type is unconnected in block <divisore_non_restoring>.
+WARNING:Xst:2677 - Node <cu/reg_second_2> of sequential type is unconnected in block <divisore_non_restoring>.
+WARNING:Xst:2677 - Node <cu/reg_second_1> of sequential type is unconnected in block <divisore_non_restoring>.
+WARNING:Xst:2677 - Node <cu/reg_second_0> of sequential type is unconnected in block <divisore_non_restoring>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block divisore_non_restoring, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : divisore_non_restoring.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 65
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 14
+#      LUT2                        : 15
+#      LUT5                        : 1
+#      LUT6                        : 2
+#      MUXCY                       : 14
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 30
+#      FDC                         : 16
+#      FDCE                        : 7
+#      FDE                         : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 9
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              16  out of  126800     0%  
+ Number of Slice LUTs:                   34  out of  63400     0%  
+    Number used as Logic:                34  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     34
+   Number with an unused Flip Flop:      18  out of     34    52%  
+   Number with an unused LUT:             0  out of     34     0%  
+   Number of fully used LUT-FF pairs:    16  out of     34    47%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  18  out of    210     8%  
+    IOB Flip Flops/Latches:              14
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 23    |
+cf/clockfx                         | NONE(sr/y_temp_7)      | 7     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.180ns (Maximum Frequency: 458.758MHz)
+   Minimum input arrival time before clock: 1.120ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.180ns (frequency: 458.758MHz)
+  Total number of paths / destination ports: 360 / 16
+-------------------------------------------------------------------------
+Delay:               2.180ns (Levels of Logic = 17)
+  Source:            cf/count_for_division.counter_0 (FF)
+  Destination:       cf/count_for_division.counter_14 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cf/count_for_division.counter_0 to cf/count_for_division.counter_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.361   0.283  cf/count_for_division.counter_0 (cf/count_for_division.counter_0)
+     INV:I->O              1   0.113   0.000  cf/Mcount_count_for_division.counter_lut<0>_INV_0 (cf/Mcount_count_for_division.counter_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  cf/Mcount_count_for_division.counter_cy<0> (cf/Mcount_count_for_division.counter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<1> (cf/Mcount_count_for_division.counter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<2> (cf/Mcount_count_for_division.counter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<3> (cf/Mcount_count_for_division.counter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<4> (cf/Mcount_count_for_division.counter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<5> (cf/Mcount_count_for_division.counter_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<6> (cf/Mcount_count_for_division.counter_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<7> (cf/Mcount_count_for_division.counter_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<8> (cf/Mcount_count_for_division.counter_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<9> (cf/Mcount_count_for_division.counter_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<10> (cf/Mcount_count_for_division.counter_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<11> (cf/Mcount_count_for_division.counter_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  cf/Mcount_count_for_division.counter_cy<12> (cf/Mcount_count_for_division.counter_cy<12>)
+     MUXCY:CI->O           0   0.023   0.000  cf/Mcount_count_for_division.counter_cy<13> (cf/Mcount_count_for_division.counter_cy<13>)
+     XORCY:CI->O           1   0.370   0.295  cf/Mcount_count_for_division.counter_xor<14> (Result<14>)
+     LUT2:I1->O            1   0.097   0.000  cf/Mcount_count_for_division.counter_eqn_141 (cf/Mcount_count_for_division.counter_eqn_14)
+     FDC:D                     0.008          cf/count_for_division.counter_14
+    ----------------------------------------
+    Total                      2.180ns (1.601ns logic, 0.579ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              1.120ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       cf/clockfx (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to cf/clockfx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             23   0.113   0.377  cf/reset_n_inv1_INV_0 (cf/reset_n_inv)
+     FDC:CLR                   0.349          cf/clockfx
+    ----------------------------------------
+    Total                      1.120ns (0.463ns logic, 0.657ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cf/clockfx'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            sr/y_temp_3 (FF)
+  Destination:       q<3> (PAD)
+  Source Clock:      cf/clockfx rising
+
+  Data Path: sr/y_temp_3 to q<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.361   0.279  sr/y_temp_3 (sr/y_temp_3)
+     OBUF:I->O                 0.000          q_3_OBUF (q<3>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock cf/clockfx
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.648|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.180|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.24 secs
+ 
+--> 
+
+Total memory usage is 4623648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

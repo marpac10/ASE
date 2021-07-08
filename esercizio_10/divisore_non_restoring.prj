@@ -1,0 +1,8 @@
+vhdl work "full_adder.vhd"
+vhdl work "shift_register.vhd"
+vhdl work "et_mazzeo.vhd"
+vhdl work "control_unit_2.vhd"
+vhdl work "control_unit.vhd"
+vhdl work "clock_filter.vhd"
+vhdl work "adder_subtracter.vhd"
+vhdl work "divisore_non_restoring.vhd"
