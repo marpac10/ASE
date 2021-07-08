@@ -1,0 +1,3 @@
+work	"../../esercizio_03/esercizio_03/et_mazzeo.vhd"
+work	"control_unit.vhd"
+work	"shift_circular_register.vhd"

@@ -1,0 +1,104 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register_debounced.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register_debounced.ngc shift_circular_register_debounced.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ngd shift_circular_register_debounced.pcf 
+par -w -intstyle ise -ol high -mt off shift_circular_register_debounced_map.ncd shift_circular_register_debounced.ncd shift_circular_register_debounced.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shift_circular_register_debounced.twx shift_circular_register_debounced.ncd -o shift_circular_register_debounced.twr shift_circular_register_debounced.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f shift_circular_register_debounced.ut shift_circular_register_debounced.ncd 

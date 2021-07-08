@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_05/esercizio_05/shift_circular_register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 shift_circular_register.ngc shift_circular_register.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shift_circular_register_map.ncd shift_circular_register.ngd shift_circular_register.pcf 
