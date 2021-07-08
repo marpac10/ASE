@@ -1,0 +1,3 @@
+vhdl isim_temp "cont_mod_2.vhd"
+vhdl isim_temp "cont_mod_16_parallelo.vhd"
+vhdl isim_temp "cont_mod_16_parallelo_tb.vhd"

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_06/cont_mod_16_serie.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_06/cont_mod_16_serie.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 cont_mod_16_serie.ngc cont_mod_16_serie.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cont_mod_16_serie_map.ncd cont_mod_16_serie.ngd cont_mod_16_serie.pcf 
+par -w -intstyle ise -ol high -mt off cont_mod_16_serie_map.ncd cont_mod_16_serie.ncd cont_mod_16_serie.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cont_mod_16_serie.twx cont_mod_16_serie.ncd -o cont_mod_16_serie.twr cont_mod_16_serie.pcf 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_06/cont_mod_16_serie.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_06/cont_mod_16_serie.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_06/cont_mod_16_serie.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_06/cont_mod_16_serie.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 cont_mod_16_serie.ngc cont_mod_16_serie.ngd  

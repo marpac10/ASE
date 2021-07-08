@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_06/progetto_parallelo/cont_mod_16_parallelo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_06/progetto_parallelo/cont_mod_16_parallelo.syr" 
