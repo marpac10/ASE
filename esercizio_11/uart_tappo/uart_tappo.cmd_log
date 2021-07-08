@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 uart_tappo.ngc uart_tappo.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o uart_tappo_map.ncd uart_tappo.ngd uart_tappo.pcf 
+par -w -intstyle ise -ol high -mt off uart_tappo_map.ncd uart_tappo.ncd uart_tappo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_tappo.twx uart_tappo.ncd -o uart_tappo.twr uart_tappo.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f uart_tappo.ut uart_tappo.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 uart_tappo.ngc uart_tappo.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o uart_tappo_map.ncd uart_tappo.ngd uart_tappo.pcf 
+par -w -intstyle ise -ol high -mt off uart_tappo_map.ncd uart_tappo.ncd uart_tappo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_tappo.twx uart_tappo.ncd -o uart_tappo.twr uart_tappo.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f uart_tappo.ut uart_tappo.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 uart_tappo.ngc uart_tappo.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o uart_tappo_map.ncd uart_tappo.ngd uart_tappo.pcf 
+par -w -intstyle ise -ol high -mt off uart_tappo_map.ncd uart_tappo.ncd uart_tappo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_tappo.twx uart_tappo.ncd -o uart_tappo.twr uart_tappo.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f uart_tappo.ut uart_tappo.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_tappo/uart_tappo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 uart_tappo.ngc uart_tappo.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o uart_tappo_map.ncd uart_tappo.ngd uart_tappo.pcf 
+par -w -intstyle ise -ol high -mt off uart_tappo_map.ncd uart_tappo.ncd uart_tappo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_tappo.twx uart_tappo.ncd -o uart_tappo.twr uart_tappo.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f uart_tappo.ut uart_tappo.ncd 

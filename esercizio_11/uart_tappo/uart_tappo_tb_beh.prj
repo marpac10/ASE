@@ -1,0 +1,4 @@
+vhdl work "control_unit.vhd"
+vhdl work "../../../ASE/RS232RefComp2.vhd"
+vhdl work "uart_tappo.vhd"
+vhdl work "uart_tappo_tb.vhd"

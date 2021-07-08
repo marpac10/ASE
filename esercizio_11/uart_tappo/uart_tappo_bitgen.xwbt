@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Windows\Desktop\Progetto\esercizio_11\uart_tappo\uart_tappo.ncd
+OUTFILE=C:\Users\Windows\Desktop\Progetto\esercizio_11\uart_tappo\uart_tappo.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Windows\Desktop\Progetto\esercizio_11\uart_tappo
+LICENSE=WebPack
+USER_INFO=211833167_0_0_437

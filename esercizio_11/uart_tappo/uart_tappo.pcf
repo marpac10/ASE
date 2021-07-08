@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.58f on Thu Dec 19 00:12:16 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "in_byte<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "in_byte<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "output<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "in_byte<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "output<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "in_byte<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "output<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "in_byte<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "output<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "in_byte<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "output<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "in_byte<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "output<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "in_byte<7>" LOCATE = SITE "R13" LEVEL 1;
+COMP "output<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "output<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "reset" LOCATE = SITE "M17" LEVEL 1;
+COMP "load" LOCATE = SITE "N17" LEVEL 1;
+SCHEMATIC END;
+
