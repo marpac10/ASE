@@ -1,0 +1,29 @@
+Command line:
+   uart_tappo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53535
+
+Thu Dec 19 00:23:43 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5155.55 Meg
+
+ Total Signals          : 61
+ Total Nets             : 141
+ Total Signal Drivers   : 40
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 24
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 544
+Total Line Count : 163
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5155.55 Meg
+
+Thu Dec 19 00:24:04 2019
+
