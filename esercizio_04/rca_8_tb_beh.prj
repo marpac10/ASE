@@ -1,0 +1,4 @@
+vhdl work "full_adder.vhd"
+vhdl work "rca_4.vhd"
+vhdl work "rca_8.vhd"
+vhdl work "rca_8_tb.vhd"
