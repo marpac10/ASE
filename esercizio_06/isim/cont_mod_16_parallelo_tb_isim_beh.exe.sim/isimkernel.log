@@ -1,0 +1,29 @@
+Command line:
+   cont_mod_16_parallelo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64417
+
+Sun Dec 01 12:15:21 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5155.39 Meg
+
+ Total Signals          : 38
+ Total Nets             : 21
+ Total Signal Drivers   : 18
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 13
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 505
+Total Line Count : 66
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5155.39 Meg
+
+Sun Dec 01 12:15:38 2019
+

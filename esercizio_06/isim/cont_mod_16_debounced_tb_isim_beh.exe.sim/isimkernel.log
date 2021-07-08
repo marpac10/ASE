@@ -1,0 +1,29 @@
+Command line:
+   cont_mod_16_debounced_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56785
+
+Thu Nov 28 19:56:13 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5155.52 Meg
+
+ Total Signals          : 48
+ Total Nets             : 67
+ Total Signal Drivers   : 24
+ Total Blocks           : 13
+ Total Primitive Blocks : 10
+ Total Processes        : 15
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 571
+Total Line Count : 66
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5312.8 Meg
+
+Thu Nov 28 19:57:03 2019
+
