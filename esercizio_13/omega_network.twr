@@ -1,0 +1,167 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml omega_network.twx omega_network.ncd -o omega_network.twr
+omega_network.pcf -ucf Nexys4DDR-100T.ucf
+
+Design file:              omega_network.ncd
+Physical constraint file: omega_network.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.08 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock src<0>
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+dati<0>     |   -0.029(R)|      FAST  |    0.955(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.307(F)|      SLOW  |    0.464(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.322(F)|      SLOW  |    0.446(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<1>     |   -0.076(R)|      FAST  |    1.022(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.249(F)|      FAST  |    0.531(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.279(F)|      FAST  |    0.513(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<2>     |   -0.020(R)|      FAST  |    0.913(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.374(F)|      SLOW  |    0.437(F)|      FAST  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.389(F)|      SLOW  |    0.419(F)|      FAST  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<3>     |   -0.034(R)|      FAST  |    0.969(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.296(F)|      SLOW  |    0.478(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.321(F)|      FAST  |    0.460(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<4>     |   -0.076(R)|      FAST  |    1.026(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.249(F)|      FAST  |    0.535(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.275(F)|      FAST  |    0.517(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<5>     |   -0.211(R)|      FAST  |    1.210(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.114(F)|      FAST  |    0.719(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.144(F)|      FAST  |    0.701(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<6>     |    0.016(R)|      FAST  |    0.938(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.341(F)|      FAST  |    0.447(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.367(F)|      FAST  |    0.429(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<7>     |    0.028(R)|      FAST  |    0.886(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |    0.399(F)|      SLOW  |    0.395(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.416(F)|      SLOW  |    0.377(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Setup/Hold to clock src<1>
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+dati<0>     |    0.042(R)|      FAST  |    0.881(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -1.036(R)|      FAST  |    2.977(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |    0.002(F)|      FAST  |    1.043(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.024(F)|      FAST  |    1.029(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<1>     |   -0.005(R)|      FAST  |    0.948(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -1.089(R)|      FAST  |    3.055(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |   -0.045(F)|      FAST  |    1.110(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |   -0.019(F)|      FAST  |    1.096(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<2>     |    0.051(R)|      FAST  |    0.839(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -1.027(R)|      FAST  |    2.935(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |    0.011(F)|      FAST  |    1.001(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.033(F)|      FAST  |    0.987(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<3>     |    0.037(R)|      FAST  |    0.895(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -1.047(R)|      FAST  |    3.002(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |   -0.003(F)|      FAST  |    1.057(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.023(F)|      FAST  |    1.043(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<4>     |   -0.005(R)|      FAST  |    0.952(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -1.083(R)|      FAST  |    3.048(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |   -0.045(F)|      FAST  |    1.114(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |   -0.023(F)|      FAST  |    1.100(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<5>     |   -0.140(R)|      FAST  |    1.136(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -1.224(R)|      FAST  |    3.243(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |   -0.180(F)|      FAST  |    1.298(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |   -0.154(F)|      FAST  |    1.284(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<6>     |    0.087(R)|      FAST  |    0.864(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -0.991(R)|      FAST  |    2.960(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |    0.047(F)|      FAST  |    1.026(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.069(F)|      FAST  |    1.012(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+dati<7>     |    0.099(R)|      FAST  |    0.812(R)|      SLOW  |c/dem/GND_6_o_s[1]_equal_1_o |   0.000|
+            |   -0.985(R)|      FAST  |    2.919(R)|      SLOW  |c/en<1>_BUFG                 |   0.000|
+            |    0.059(F)|      FAST  |    0.974(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_4_o|   0.000|
+            |    0.085(F)|      FAST  |    0.960(F)|      SLOW  |c/dem/GND_6_o_GND_6_o_AND_8_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Clock dst<0> to Pad
+------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                  |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination       |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------------+-----------------+------------+-----------------+------------+------------------+--------+
+reg_destination<0>|         8.096(R)|      SLOW  |         3.526(R)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<1>|         8.118(R)|      SLOW  |         3.545(R)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<2>|         8.127(F)|      SLOW  |         3.558(F)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<3>|         8.141(F)|      SLOW  |         3.558(F)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<4>|         8.143(R)|      SLOW  |         3.559(R)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<5>|         8.143(R)|      SLOW  |         3.559(R)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<6>|         8.145(F)|      SLOW  |         3.563(F)|      FAST  |dst_0_BUFGP       |   0.000|
+reg_destination<7>|         8.147(F)|      SLOW  |         3.563(F)|      FAST  |dst_0_BUFGP       |   0.000|
+------------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock dst<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+dst<1>         |    3.331|    3.085|    3.431|    2.989|
+src<1>         |    0.424|    0.424|    0.524|    0.524|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dst<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+src<0>         |    0.416|    1.169|    0.445|    0.795|
+src<1>         |    2.563|    1.169|    2.666|    0.795|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock src<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+src<0>         |    0.544|    0.544|    0.969|    0.969|
+src<1>         |    0.482|    0.482|    0.758|    0.758|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock src<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+src<0>         |    0.626|    0.626|    0.490|    0.490|
+src<1>         |    0.564|    0.564|    0.337|    0.337|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Dec 13 01:17:46 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4999 MB
+
+
+

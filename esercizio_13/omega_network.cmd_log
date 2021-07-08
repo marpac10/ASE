@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 omega_network.ngc omega_network.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o omega_network_map.ncd omega_network.ngd omega_network.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 omega_network.ngc omega_network.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o omega_network_map.ncd omega_network.ngd omega_network.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 omega_network.ngc omega_network.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 omega_network.ngc omega_network.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o omega_network_map.ncd omega_network.ngd omega_network.pcf 
+par -w -intstyle ise -ol high -mt off omega_network_map.ncd omega_network.ncd omega_network.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml omega_network.twx omega_network.ncd -o omega_network.twr omega_network.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f omega_network.ut omega_network.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 omega_network.ngc omega_network.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o omega_network_map.ncd omega_network.ngd omega_network.pcf 
+par -w -intstyle ise -ol high -mt off omega_network_map.ncd omega_network.ncd omega_network.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml omega_network.twx omega_network.ncd -o omega_network.twr omega_network.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f omega_network.ut omega_network.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.syr" 

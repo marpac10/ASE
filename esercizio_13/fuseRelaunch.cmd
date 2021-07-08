@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network_tb_isim_beh.exe" -prj "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network_tb_beh.prj" "work.omega_network_tb" 

@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network_tb_isim_beh.exe -prj C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network_tb_beh.prj work.omega_network_tb 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/mux_2_1.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/demux_1_2.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/switch.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/mux_4_1.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/logic_arbiter.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/demux_1_4.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/operative_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/decoder_2_4.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/control_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture dataflow of entity mux_4_1 [mux_4_1_default]
+Compiling architecture behavioral of entity demux_1_4 [demux_1_4_default]
+Compiling architecture behavioral of entity logic_arbiter [logic_arbiter_default]
+Compiling architecture structural of entity control_unit [control_unit_default]
+Compiling architecture dataflow of entity mux_2_1 [mux_2_1_default]
+Compiling architecture behavioral of entity demux_1_2 [demux_1_2_default]
+Compiling architecture structural of entity switch [switch_default]
+Compiling architecture structural of entity operative_unit [operative_unit_default]
+Compiling architecture behavioral of entity decoder_2_4 [decoder_2_4_default]
+Compiling architecture structural of entity omega_network [omega_network_default]
+Compiling architecture behavior of entity omega_network_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: Impossibile trovare il percorso specificato, "isim\omega_network_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 23 VHDL Units
+Built simulation executable C:/Users/Windows/Desktop/Progetto/esercizio_13/omega_network_tb_isim_beh.exe
+Fuse Memory Usage: 30532 KB
+Fuse CPU Usage: 483 ms

@@ -1,0 +1,21 @@
+Release 14.5 Drc P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Dec 13 01:17:55 2019
+
+drc -z omega_network.ncd omega_network.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   c/dem/GND_6_o_s[1]_equal_1_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   c/dem/GND_6_o_GND_6_o_AND_4_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   c/dem/GND_6_o_GND_6_o_AND_8_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

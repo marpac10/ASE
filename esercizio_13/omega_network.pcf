@@ -1,0 +1,35 @@
+//! **************************************************************************
+// Written by: Map P.58f on Fri Dec 13 01:17:17 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dst<0>" LOCATE = SITE "T8" LEVEL 1;
+PIN dst<0>_pin<0> = BEL "dst<0>" PINNAME PAD;
+PIN "dst<0>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "dst<1>" LOCATE = SITE "U8" LEVEL 1;
+PIN dst<1>_pin<0> = BEL "dst<1>" PINNAME PAD;
+PIN "dst<1>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "reg_destination<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "reg_destination<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "reg_destination<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "reg_destination<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "reg_destination<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "reg_destination<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "reg_destination<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "reg_destination<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "src<0>" LOCATE = SITE "R16" LEVEL 1;
+PIN src<0>_pin<0> = BEL "src<0>" PINNAME PAD;
+PIN "src<0>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "src<1>" LOCATE = SITE "T13" LEVEL 1;
+PIN src<1>_pin<0> = BEL "src<1>" PINNAME PAD;
+PIN "src<1>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "dati<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "dati<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "dati<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "dati<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "dati<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "dati<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "dati<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "dati<7>" LOCATE = SITE "R13" LEVEL 1;
+SCHEMATIC END;
+
