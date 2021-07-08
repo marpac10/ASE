@@ -1,0 +1,29 @@
+Command line:
+   omega_network_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64775
+
+Sat Dec 14 01:29:29 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5155.48 Meg
+
+ Total Signals          : 114
+ Total Nets             : 52
+ Total Signal Drivers   : 22
+ Total Blocks           : 21
+ Total Primitive Blocks : 13
+ Total Processes        : 13
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 412
+Total Line Count : 55
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 4998.2 Meg
+
+Sat Dec 14 01:31:00 2019
+
