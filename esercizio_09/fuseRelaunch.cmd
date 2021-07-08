@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/Progetto/esercizio_09/moltiplicatore_somma_diagonali_tb_isim_beh.exe" -prj "C:/Users/Windows/Desktop/Progetto/esercizio_09/moltiplicatore_somma_diagonali_tb_beh.prj" "work.moltiplicatore_somma_diagonali_tb" 

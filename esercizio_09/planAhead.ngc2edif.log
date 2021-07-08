@@ -1,0 +1,18 @@
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design display_on_board.ngc ...
+WARNING:NetListWriters:298 - No output is written to display_on_board.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus msd/msd/r<54 : 3> on block
+   display_on_board is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus msd/msd/s<48 : 4> on block
+   display_on_board is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file display_on_board.edif ...
+ngc2edif: Total memory usage is 4315468 kilobytes
+
