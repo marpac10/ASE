@@ -1,0 +1,8 @@
+vhdl work "cont_mod_2_2.vhd"
+vhdl work "../../../Downloads/debounce_v1.vhd"
+vhdl work "cont_mod_16_serie.vhd"
+vhdl work "cathodes_manager.vhd"
+vhdl work "anodes_manager.vhd"
+vhdl work "display_seven_segments.vhd"
+vhdl work "cont_mod_16_debounced.vhd"
+vhdl work "display_on_board.vhd"

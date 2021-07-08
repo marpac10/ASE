@@ -1,0 +1,619 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: cont_mod_16_serie.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cont_mod_16_serie.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cont_mod_16_serie"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : cont_mod_16_serie
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_2_2.vhd" into library work
+Parsing entity <cont_mod_2_2>.
+Parsing architecture <Behavioral> of entity <cont_mod_2_2>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_2.vhd" into library work
+Parsing entity <cont_mod_2>.
+Parsing architecture <Behavioral> of entity <cont_mod_2>.
+Parsing VHDL file "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_16_serie.vhd" into library work
+Parsing entity <cont_mod_16_serie>.
+Parsing architecture <Structural> of entity <cont_mod_16_serie>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cont_mod_16_serie> (architecture <Structural>) from library <work>.
+
+Elaborating entity <cont_mod_2> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_2.vhd" Line 27: y_temp should be on the sensitivity list of the process
+
+Elaborating entity <cont_mod_2_2> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_2_2.vhd" Line 21: y_temp should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cont_mod_16_serie>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_16_serie.vhd".
+    Summary:
+	no macro.
+Unit <cont_mod_16_serie> synthesized.
+
+Synthesizing Unit <cont_mod_2>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_2.vhd".
+    Found 1-bit register for signal <y_temp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <cont_mod_2> synthesized.
+
+Synthesizing Unit <cont_mod_2_2>.
+    Related source file is "C:\Users\Windows\Desktop\Progetto\esercizio_06\cont_mod_2_2.vhd".
+    Found 1-bit register for signal <y_temp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <cont_mod_2_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cont_mod_16_serie> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cont_mod_16_serie, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cont_mod_16_serie.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 9
+#      INV                         : 4
+#      LUT2                        : 5
+# FlipFlops/Latches                : 4
+#      FDE_1                       : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               4  out of  126800     0%  
+ Number of Slice LUTs:                    9  out of  63400     0%  
+    Number used as Logic:                 9  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      9
+   Number with an unused Flip Flop:       5  out of      9    55%  
+   Number with an unused LUT:             0  out of      9     0%  
+   Number of fully used LUT-FF pairs:     4  out of      9    44%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    210     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1     |
+y_2_OBUF(mod_2/Mmux_y11:O)         | NONE(*)(mod_3/y_temp)  | 1     |
+y_1_OBUF(mod_1/Mmux_y11:O)         | NONE(*)(mod_2/y_temp)  | 1     |
+y_0_OBUF(mod_0/Mmux_y11:O)         | NONE(*)(mod_1/y_temp)  | 1     |
+-----------------------------------+------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.048ns (Maximum Frequency: 954.381MHz)
+   Minimum input arrival time before clock: 0.884ns
+   Maximum output required time after clock: 1.044ns
+   Maximum combinational path delay: 0.793ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.048ns (frequency: 954.381MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.048ns (Levels of Logic = 1)
+  Source:            mod_0/y_temp (FF)
+  Destination:       mod_0/y_temp (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: mod_0/y_temp to mod_0/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.284  mod_0/y_temp (mod_0/y_temp)
+     INV:I->O              1   0.113   0.279  mod_0/y_temp_INV_3_o1_INV_0 (mod_0/y_temp_INV_3_o)
+     FDE_1:D                   0.008          mod_0/y_temp
+    ----------------------------------------
+    Total                      1.048ns (0.485ns logic, 0.563ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'y_2_OBUF'
+  Clock period: 1.048ns (frequency: 954.381MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.048ns (Levels of Logic = 1)
+  Source:            mod_3/y_temp (FF)
+  Destination:       mod_3/y_temp (FF)
+  Source Clock:      y_2_OBUF falling
+  Destination Clock: y_2_OBUF falling
+
+  Data Path: mod_3/y_temp to mod_3/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.284  mod_3/y_temp (mod_3/y_temp)
+     INV:I->O              1   0.113   0.279  mod_3/y_temp_INV_6_o1_INV_0 (mod_3/y_temp_INV_6_o)
+     FDE_1:D                   0.008          mod_3/y_temp
+    ----------------------------------------
+    Total                      1.048ns (0.485ns logic, 0.563ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'y_1_OBUF'
+  Clock period: 1.048ns (frequency: 954.381MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.048ns (Levels of Logic = 1)
+  Source:            mod_2/y_temp (FF)
+  Destination:       mod_2/y_temp (FF)
+  Source Clock:      y_1_OBUF falling
+  Destination Clock: y_1_OBUF falling
+
+  Data Path: mod_2/y_temp to mod_2/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.284  mod_2/y_temp (mod_2/y_temp)
+     INV:I->O              1   0.113   0.279  mod_2/y_temp_INV_6_o1_INV_0 (mod_2/y_temp_INV_6_o)
+     FDE_1:D                   0.008          mod_2/y_temp
+    ----------------------------------------
+    Total                      1.048ns (0.485ns logic, 0.563ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'y_0_OBUF'
+  Clock period: 1.048ns (frequency: 954.381MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.048ns (Levels of Logic = 1)
+  Source:            mod_1/y_temp (FF)
+  Destination:       mod_1/y_temp (FF)
+  Source Clock:      y_0_OBUF falling
+  Destination Clock: y_0_OBUF falling
+
+  Data Path: mod_1/y_temp to mod_1/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.284  mod_1/y_temp (mod_1/y_temp)
+     INV:I->O              1   0.113   0.279  mod_1/y_temp_INV_6_o1_INV_0 (mod_1/y_temp_INV_6_o)
+     FDE_1:D                   0.008          mod_1/y_temp
+    ----------------------------------------
+    Total                      1.048ns (0.485ns logic, 0.563ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              0.884ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       mod_0/y_temp (FF)
+  Destination Clock: clk falling
+
+  Data Path: rst to mod_0/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.412  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            1   0.097   0.279  mod_0/_n0010_inv1 (mod_0/_n0010_inv)
+     FDE_1:CE                  0.095          mod_0/y_temp
+    ----------------------------------------
+    Total                      0.884ns (0.193ns logic, 0.691ns route)
+                                       (21.8% logic, 78.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y_2_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.407ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       mod_3/y_temp (FF)
+  Destination Clock: y_2_OBUF falling
+
+  Data Path: rst to mod_3/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.311  rst_IBUF (rst_IBUF)
+     FDE_1:CE                  0.095          mod_3/y_temp
+    ----------------------------------------
+    Total                      0.407ns (0.096ns logic, 0.311ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y_1_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.407ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       mod_2/y_temp (FF)
+  Destination Clock: y_1_OBUF falling
+
+  Data Path: rst to mod_2/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.311  rst_IBUF (rst_IBUF)
+     FDE_1:CE                  0.095          mod_2/y_temp
+    ----------------------------------------
+    Total                      0.407ns (0.096ns logic, 0.311ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y_0_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.407ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       mod_1/y_temp (FF)
+  Destination Clock: y_0_OBUF falling
+
+  Data Path: rst to mod_1/y_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.311  rst_IBUF (rst_IBUF)
+     FDE_1:CE                  0.095          mod_1/y_temp
+    ----------------------------------------
+    Total                      0.407ns (0.096ns logic, 0.311ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y_2_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.040ns (Levels of Logic = 2)
+  Source:            mod_3/y_temp (FF)
+  Destination:       y<3> (PAD)
+  Source Clock:      y_2_OBUF falling
+
+  Data Path: mod_3/y_temp to y<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.299  mod_3/y_temp (mod_3/y_temp)
+     LUT2:I1->O            1   0.097   0.279  mod_3/Mmux_y11 (y_3_OBUF)
+     OBUF:I->O                 0.000          y_3_OBUF (y<3>)
+    ----------------------------------------
+    Total                      1.040ns (0.461ns logic, 0.579ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y_1_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.044ns (Levels of Logic = 2)
+  Source:            mod_2/y_temp (FF)
+  Destination:       y<2> (PAD)
+  Source Clock:      y_1_OBUF falling
+
+  Data Path: mod_2/y_temp to y<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.299  mod_2/y_temp (mod_2/y_temp)
+     LUT2:I1->O            2   0.097   0.283  mod_2/Mmux_y11 (y_2_OBUF)
+     OBUF:I->O                 0.000          y_2_OBUF (y<2>)
+    ----------------------------------------
+    Total                      1.044ns (0.461ns logic, 0.583ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y_0_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.044ns (Levels of Logic = 2)
+  Source:            mod_1/y_temp (FF)
+  Destination:       y<1> (PAD)
+  Source Clock:      y_0_OBUF falling
+
+  Data Path: mod_1/y_temp to y<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.299  mod_1/y_temp (mod_1/y_temp)
+     LUT2:I1->O            2   0.097   0.283  mod_1/Mmux_y11 (y_1_OBUF)
+     OBUF:I->O                 0.000          y_1_OBUF (y<1>)
+    ----------------------------------------
+    Total                      1.044ns (0.461ns logic, 0.583ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.044ns (Levels of Logic = 2)
+  Source:            mod_0/y_temp (FF)
+  Destination:       y<0> (PAD)
+  Source Clock:      clk falling
+
+  Data Path: mod_0/y_temp to y<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.364   0.299  mod_0/y_temp (mod_0/y_temp)
+     LUT2:I1->O            2   0.097   0.283  mod_0/Mmux_y11 (y_0_OBUF)
+     OBUF:I->O                 0.000          y_0_OBUF (y<0>)
+    ----------------------------------------
+    Total                      1.044ns (0.461ns logic, 0.583ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               0.793ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       y<2> (PAD)
+
+  Data Path: rst to y<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.001   0.411  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            2   0.097   0.283  mod_0/Mmux_y11 (y_0_OBUF)
+     OBUF:I->O                 0.000          y_0_OBUF (y<0>)
+    ----------------------------------------
+    Total                      0.793ns (0.098ns logic, 0.695ns route)
+                                       (12.4% logic, 87.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.048|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock y_0_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+y_0_OBUF       |         |         |    1.048|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock y_1_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+y_1_OBUF       |         |         |    1.048|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock y_2_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+y_2_OBUF       |         |         |    1.048|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.34 secs
+ 
+--> 
+
+Total memory usage is 4623612 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
