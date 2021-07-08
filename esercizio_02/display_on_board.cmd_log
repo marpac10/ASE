@@ -1,0 +1,62 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/progetti_completi/esercizio_display/Display7Seg/constraints_nexys2_1200.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/fileboard/Nexys4DDR/Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/fileboard/Nexys4DDR/Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/fileboard/Nexys4DDR/Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/fileboard/Nexys4DDR/Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/fileboard/Nexys4DDR/Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Windows/Desktop/ASE/fileboard/Nexys4DDR/Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/ASE/Elaborato_gruppo50/esercizio_02/display_7_segmenti/display_on_board.xst" -ofn "C:/Users/Windows/Desktop/ASE/Elaborato_gruppo50/esercizio_02/display_7_segmenti/display_on_board.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 display_on_board.ngc display_on_board.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o display_on_board_map.ncd display_on_board.ngd display_on_board.pcf 
+par -w -intstyle ise -ol high -mt off display_on_board_map.ncd display_on_board.ncd display_on_board.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_on_board.twx display_on_board.ncd -o display_on_board.twr display_on_board.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f display_on_board.ut display_on_board.ncd 

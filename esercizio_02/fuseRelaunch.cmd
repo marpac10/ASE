@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/tb_display_isim_beh.exe" -prj "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/tb_display_beh.prj" "work.tb_display" 

@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/tb_display_isim_beh.exe -prj C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/tb_display_beh.prj work.tb_display 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/cathodes_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/anodes_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/display_seven_segments.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/tb_display.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity cathodes_manager [cathodes_manager_default]
+Compiling architecture behavioral of entity anodes_manager [anodes_manager_default]
+Compiling architecture structural of entity display_seven_segments [display_seven_segments_default]
+Compiling architecture behavior of entity tb_display
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: Impossibile trovare il percorso specificato, "isim\tb_display_isim_beh.exe.sim\libPortability.dll".
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/Windows/Desktop/Progetto/esercizio_02/display_7_segmenti/tb_display_isim_beh.exe
+Fuse Memory Usage: 35340 KB
+Fuse CPU Usage: 593 ms
