@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows/Desktop/Elaborato_gruppo50/esercizio_11/uart_2/uart_2_tb_isim_beh.exe" -prj "C:/Users/Windows/Desktop/Elaborato_gruppo50/esercizio_11/uart_2/uart_2_tb_beh.prj" "work.uart_2_tb" 

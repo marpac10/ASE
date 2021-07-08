@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"C:/Users/Windows/Desktop/Elaborato_gruppo50/esercizio_11/uart_2/uart_2.vhd" Line 68: &lt;<arg fmt="%s" index="1">uartcomponent</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"C:/Users/Windows/Desktop/Elaborato_gruppo50/esercizio_11/uart_2/uart_2.vhd" Line 83: &lt;<arg fmt="%s" index="1">uartcomponent</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Windows/Desktop/Elaborato_gruppo50/esercizio_11/uart_2/uart_2.vhd</arg>&quot; Line <arg fmt="%d" index="2">68</arg>. Instance <arg fmt="%s" index="3">uartcomponent</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Windows/Desktop/Elaborato_gruppo50/esercizio_11/uart_2/uart_2.vhd</arg>&quot; Line <arg fmt="%d" index="2">83</arg>. Instance <arg fmt="%s" index="3">uartcomponent</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: Impossibile trovare il percorso specificato, &quot;isim\uart_2_tb_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+</msg>
+
+</messages>
+

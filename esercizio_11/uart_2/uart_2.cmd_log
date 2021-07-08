@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_2/uart_2.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_2/uart_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR-100T.ucf -p xc7a100t-csg324-3 uart_2.ngc uart_2.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o uart_2_map.ncd uart_2.ngd uart_2.pcf 
+par -w -intstyle ise -ol high -mt off uart_2_map.ncd uart_2.ncd uart_2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_2.twx uart_2.ncd -o uart_2.twr uart_2.pcf -ucf Nexys4DDR-100T.ucf 
+bitgen -intstyle ise -f uart_2.ut uart_2.ncd 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_2/uart_2.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_2/uart_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_2/uart_2.xst" -ofn "C:/Users/Windows/Desktop/Progetto/esercizio_11/uart_2/uart_2.syr" 

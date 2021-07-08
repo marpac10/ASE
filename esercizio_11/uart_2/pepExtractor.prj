@@ -1,0 +1,3 @@
+work	"../../../ASE/RS232RefComp2.vhd"
+work	"control_unit.vhd"
+work	"uart_2.vhd"
